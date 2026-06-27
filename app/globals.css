@@ -59,10 +59,14 @@
   --color-brand-800: var(--ds-brand-800);
   --color-brand-900: var(--ds-brand-900);
   --color-brand-950: var(--ds-brand-950);
-  --color-success:   var(--ds-success);
-  --color-warning:   var(--ds-warning);
-  --color-error:     var(--ds-error);
-  --color-info:      var(--ds-info);
+  --color-success:        var(--ds-success);
+  --color-warning:        var(--ds-warning);
+  --color-error:          var(--ds-error);
+  --color-info:           var(--ds-info);
+  --color-success-muted:  var(--ds-success-muted);
+  --color-warning-muted:  var(--ds-warning-muted);
+  --color-error-muted:    var(--ds-error-muted);
+  --color-info-muted:     var(--ds-info-muted);
 }
 
 :root {
@@ -189,6 +193,12 @@
   --ds-warning: oklch(0.750 0.180 85);
   --ds-error:   oklch(0.580 0.240 27);
   --ds-info:    oklch(0.620 0.180 240);
+
+  /* Muted — background para badges y alerts */
+  --ds-success-muted: oklch(0.94 0.06 142);
+  --ds-warning-muted: oklch(0.95 0.06 85);
+  --ds-error-muted:   oklch(0.95 0.04 27);
+  --ds-info-muted:    oklch(0.94 0.05 240);
 }
 
 /* ── Typography: Font sizes — Major Third scale (×1.250) ── */
