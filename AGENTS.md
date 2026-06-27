@@ -57,9 +57,10 @@ Estructura: `components/<ComponentName>/<ComponentName>.tsx` + `<ComponentName>.
 
 ## Tokens
 
-- CSS custom properties en bloque `@theme` de `app/globals.css`.
-- Mirror TypeScript en `lib/tokens.ts` (solo lectura, derivado del CSS).
-- Categorías: colores, tipografía, espaciado, radios, sombras.
+- `app/globals.css` es la única fuente de verdad. Prefijo `--ds-*` para todos los tokens del design system.
+- **No existe `lib/tokens.ts`** — el mirror de TypeScript queda aplazado hasta P08 o hasta que el consumo desde TS lo justifique. No crearlo sin necesidad real.
+- Categorías: brand (color scale), neutral, semantic state, tipografía, radios, sombras.
+- Los tokens de color están mapeados en `@theme inline` para generar utilidades Tailwind (`bg-brand-500`, `text-brand-600`, etc.).
 
 ---
 

@@ -50,13 +50,14 @@ Button · Input · Textarea · Card · Badge · Avatar · Modal · Typography
 ```
 design-system/
 ├── app/                    # Next.js App Router (entorno de dev)
-│   └── globals.css         # Tokens como CSS custom properties (@theme)
+│   └── globals.css         # Tokens como CSS custom properties (única fuente de verdad)
 ├── components/
 │   └── <Name>/
 │       ├── <Name>.tsx
 │       └── <Name>.stories.tsx
 ├── lib/
-│   └── tokens.ts           # Mirror TypeScript de los tokens CSS
+│   └── utils.ts            # cn() helper (clsx + tailwind-merge)
+│   (tokens.ts aplazado hasta P08 o cuando el consumo desde TS lo justifique)
 ├── .storybook/
 │   ├── main.ts
 │   └── preview.ts
